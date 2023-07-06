@@ -1,9 +1,9 @@
 function App() {
   return (
     <>
-      <h1>nefit</h1>
+      <p className="text-3xl font-bold underline text-red-primary">Hello world!</p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
