@@ -8,7 +8,7 @@ export const Carrousel = () => {
                 <div className="absolute -mt-[24.5rem] z-10 ml-[190px] w-[33rem] h-[11.75rem]">
                     <div className="h-auto text-[40px] font-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                     <button
-                        className="hover:bg-black px-4 py-1 border rounded-xl h-10 w-32 mt-2"
+                        className="transition duration-300 ease-in-out hover:bg-black px-4 py-1 border rounded-xl h-10 w-32 mt-2"
                         type="submit">
                         <a className="text-lg" href="">Ver mais</a>
                     </button>

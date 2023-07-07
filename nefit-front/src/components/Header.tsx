@@ -13,10 +13,10 @@ export const Header = () => {
                     </div>
                     <ul className="flex gap-14 list-none">
                         <li className="text-red-active underline underline-offset-8"><a href="">Início</a></li>
-                        <li className="hover:text-red-active hover:underline hover:underline-offset-8"><a href="">Quem somos</a></li>
-                        <li className="hover:text-red-active hover:underline hover:underline-offset-8"><a href="">Produção acadêmica</a></li>
-                        <li className="hover:text-red-active hover:underline hover:underline-offset-8"><a href="">Membros</a></li>
-                        <li className="hover:text-red-active hover:underline hover:underline-offset-8"><a href="">Contato</a></li>
+                        <li className="hover:underline hover:underline-offset-8"><a href="">Quem somos</a></li>
+                        <li className="hover:underline hover:underline-offset-8"><a href="">Produção acadêmica</a></li>
+                        <li className="hover:underline hover:underline-offset-8"><a href="">Membros</a></li>
+                        <li className="hover:underline hover:underline-offset-8"><a href="">Contato</a></li>
                     </ul>
                     <button><BsSearch /></button>
                 </div>
