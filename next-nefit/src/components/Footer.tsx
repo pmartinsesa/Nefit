@@ -13,18 +13,16 @@ export const Footer = () => {
   return (
     <>
       <div className="grid grid-cols-12 place-content-center bg-[#E4E4E4] h-32">
-        <div className="col-start-2 col-span-2 grid grid-cols-2">
-          <Image
-            className="grayscale object-fill h-16 w-40 bg-no-repeat"
-            src={logo}
-            alt="logo"
-          />
-          <Image
-            className="grayscale object-fill h-16 w-32 bg-no-repeat"
-            src={logoUfpr}
-            alt="logoUfpr"
-          />
-        </div>
+        <Image
+          className="col-start-2 col-span-2 grayscale object-fill h-[3.75rem] w-[10.65rem] bg-no-repeat"
+          src={logo}
+          alt="logo"
+        />
+        <Image
+          className="grayscale object-fill h-[4rem] w-[7rem] bg-no-repeat"
+          src={logoUfpr}
+          alt="logoUfpr"
+        />
         <span className="col-end-12 mt-6 justify-self-end w-[18rem] text-gray-800">
           Todos os direitos reservados © 2023
         </span>

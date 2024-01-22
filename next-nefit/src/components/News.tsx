@@ -27,7 +27,7 @@ export const News = ({
       <div
         onMouseOver={() => setIsOver(true)}
         onMouseOut={() => setIsOver(false)}
-        className="flex flex-col  w-[27rem]"
+        className="flex flex-col w-[17rem]"
       >
         <a 
           data-isover={isOver}
@@ -37,17 +37,17 @@ export const News = ({
             data-isover={isOver}
             className="
               transition duration-300 ease-in-out 
-              h-[27rem] w-[27rem] rounded-xl grayscale-[80%] object-cover 
+              h-[17rem] w-[17rem] rounded-xl grayscale-[80%] object-cover 
               data-[isover=true]:grayscale-0"
             src={image}
             alt="testemini1"
           />
-          <h2 className="transition duration-300 ease-in-out text-[20px] w-[27rem] max-h-16 mt-4 font-bold overflow-hidden">
+          <h2 className="transition duration-300 ease-in-out text-lg w-[17rem] max-h-[6rem] mt-4 font-bold overflow-hidden">
             {title}
           </h2>
         </a>
-        <span className="w-[27rem] mt-1">{`Publicado em ${publishTime}`}</span>
-        <span className="w-[27rem] mt-1">{hashtags}</span>
+        <span className="w-[17rem] text-base mt-1">{`Publicado em ${publishTime}`}</span>
+        <span className="w-[17rem] text-base mt-1">{hashtags}</span>
       </div>
     </>
   );

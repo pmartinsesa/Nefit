@@ -42,7 +42,7 @@ export const Schedulers = ({}: SchedulerType) => {
     return schedules.map((s, i) => (
       <Image
         key={i}
-        className="h-[40rem] w-[40rem] rounded-xl object-cover cursor-pointer mb-20"
+        className="h-[22rem] w-[22rem] rounded-xl object-cover cursor-pointer"
         src={s.image}
         alt={`testemini-${i}`}
         onClick={(e: any) =>
@@ -55,30 +55,65 @@ export const Schedulers = ({}: SchedulerType) => {
   const renderScheules = (): JSX.Element => {
     if (schedule === null) {
       return (
-        <div className="col-start-2 col-end-12 col-span-12 max-[1650px]:justify-self-center grid min-[1650px]:grid-cols-3 grid-cols-1 mt-20 gap-10">
-          {allSchedules()}
+        <div
+          className="
+          col-start-2 col-span-10 my-20 gap-10
+          min-[1950px]:justify-self-center"
+        >
+          <div
+            className="
+            flex justify-between gap-8
+            max-[1270px]:flex-col max-[1270px]:items-center"
+          >
+            {allSchedules()}
+          </div>
         </div>
       );
     }
 
     return (
       <>
-        <div className="col-start-11 mt-12">
+        <div className="col-start-10 mt-12">
           <button
-            className="justify-self-center col-span-12 transition duration-300 ease-in-out hover:bg-red-primary hover:text-white px-4 py-1 border text-white border-white rounded-xl h-12 w-[15rem] mt-12"
+            className="
+              col-span-12 justify-self-center h-12 w-[15rem]mt-12 px-4 py-1 text-white
+              transition duration-300 ease-in-out
+              hover:bg-red-primary hover:text-white border border-white rounded-xl
+              min-[1950px]:justify-self-center
+              max-[1270px]:h-10 max-[1270px]:w-[10rem]"
             type="submit"
             onClick={() => setSchedule(null)}
           >
-            <span className="text-lg">Ver todas as agendas</span>
+            <span
+              className="
+            text-lg 
+            max-[1270px]:text-xs"
+            >
+              Ver todas as agendas
+            </span>
           </button>
         </div>
-        <div className="col-start-2 col-end-11 col-span-12 grid grid-cols-2 mt-20 gap-4">
-          <Image
-            className="h-[40rem] w-[40rem] rounded-xl object-cover cursor-pointer mb-20"
-            src={schedule.image}
-            alt="testemini1"
-          />
-          <div className="min-[1674px]:text-[26.5px] min-[1270px]:text-[25px] text-[22px] pt-4 font-light justify-self-center whitespace-pre-line">{`${schedule.description}\n\nData: ${schedule.date}\n${schedule.localization}\n\nEsperamos todos a sua presença`}</div>
+        <div
+          className="
+          col-start-2 col-span-12 my-20 
+          min-[1950px]:justify-self-center"
+        >
+          <div className="flex gap-[3.5rem]">
+            <Image
+              className="
+                rounded-xl object-cover cursor-pointer h-[22rem] w-[22rem] 
+                max-[850px]:h-[15rem] max-[850px]:w-[15rem] max-[550px]:h-[5rem] max-[550px]:w-[5rem]"
+              src={schedule.image}
+              alt="testemini1"
+            />
+            <div
+              className="
+              pt-4 font-light justify-self-center whitespace-pre-line w-[30rem] h-[18rem]
+              max-[850px]:text-sm max-[680px]:text-xs"
+            >
+              {`${schedule.description}\n\nData: ${schedule.date}\n${schedule.localization}\n\nEsperamos todos a sua presença`}
+            </div>
+          </div>
         </div>
       </>
     );
@@ -86,11 +121,25 @@ export const Schedulers = ({}: SchedulerType) => {
 
   return (
     <>
-      <div className="col-span-6 col-start-2 flex pt-16">
-        <BsCalendarCheck className=" w-9 h-9" />
+      <div
+        className="
+        col-start-2 col-span-6 flex pt-16 
+        min-[1950px]:justify-self-center"
+      >
+        <BsCalendarCheck className="w-9 h-9" />
         <div className="ml-5 -mt-3">
-          <h1 className="text-[40px] font-bold">Agenda</h1>
-          <h2 className="text-[30px] font-extralight">
+          <h1
+            className="
+            text-[40px] font-bold 
+            max-[1270px]:text-3xl"
+          >
+            Agenda
+          </h1>
+          <h2
+            className="
+            text-[30px] font-extralight 
+            max-[1270px]:text-2xl"
+          >
             Participe de nossas próximas reuniões
           </h2>
         </div>

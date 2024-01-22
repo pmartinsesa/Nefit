@@ -10,7 +10,7 @@ export const Cover = ({title = ""}: CoverProps) => {
     <>
       <div className="text-white">
         <Image
-          className="w-full h-[25rem] object-cover brightness-50 bg-no-repeat"
+          className="w-full h-[23.5rem] object-cover brightness-50 bg-no-repeat"
           src={testeNoticiaUm}
           alt="not1"
         />
