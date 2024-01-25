@@ -18,7 +18,7 @@ export const News = ({
   publishTime,
   hashtags,
   route,
-  clasname
+  clasname,
 }: NewsProps) => {
   const [isOver, setIsOver] = useState(false);
 
@@ -29,10 +29,11 @@ export const News = ({
         onMouseOut={() => setIsOver(false)}
         className="flex flex-col w-[17rem]"
       >
-        <a 
+        <a
           data-isover={isOver}
-          className="data-[isover=true]:text-red-primary text-gray-800" 
-          href="">
+          className="data-[isover=true]:text-red-primary text-gray-800"
+          href=""
+        >
           <Image
             data-isover={isOver}
             className="

@@ -53,6 +53,131 @@ export default function aboutus() {
         <h1 className="justify-self-center col-span-12 text-red-primary text-4xl font-bold">
           Membros
         </h1>
+        <div
+          className="
+          justify-self-center col-span-12 grid grid-cols-4 gap-x-40 gap-y-16 mb-48
+         "
+        >
+          <div className="flex flex-col justify-center items-center text-gray-500 h-[12rem] w-[12rem]">
+            <Image
+              className="rounded-full h-[9rem] w-[9rem]"
+              src={quemSomosDois}
+              alt="quem-somos2"
+            />
+            <div className="font-bold mt-1">Nome 1</div>
+            <div className="mt-1">Descrição do q faz</div>
+          </div>
+
+          <div className="flex flex-col justify-center items-center text-gray-500 h-[12rem] w-[12rem]">
+            <Image
+              className="rounded-full h-[9rem] w-[9rem]"
+              src={quemSomosDois}
+              alt="quem-somos2"
+            />
+            <div className="font-bold mt-1">Nome 2</div>
+            <div className="mt-1">Descrição do q faz</div>
+          </div>
+
+          <div className="flex flex-col justify-center items-center text-gray-500 h-[12rem] w-[12rem]">
+            <Image
+              className="rounded-full h-[9rem] w-[9rem]"
+              src={quemSomosDois}
+              alt="quem-somos2"
+            />
+            <div className="font-bold mt-1">Nome 3</div>
+            <div className="mt-1">Descrição do q faz</div>
+          </div>
+
+          <div className="flex flex-col justify-center items-center text-gray-500 h-[12rem] w-[12rem]">
+            <Image
+              className="rounded-full h-[9rem] w-[9rem]"
+              src={quemSomosDois}
+              alt="quem-somos2"
+            />
+            <div className="font-bold mt-1">Nome 4</div>
+            <div className="mt-1">Descrição do q faz</div>
+          </div>
+
+          <div className="flex flex-col justify-center items-center text-gray-500 h-[12rem] w-[12rem]">
+            <Image
+              className="rounded-full h-[9rem] w-[9rem]"
+              src={quemSomosDois}
+              alt="quem-somos2"
+            />
+            <div className="font-bold mt-1">Nome 5</div>
+            <div className="mt-1">Descrição do q faz</div>
+          </div>
+
+          <div className="flex flex-col justify-center items-center text-gray-500 h-[12rem] w-[12rem]">
+            <Image
+              className="rounded-full h-[9rem] w-[9rem]"
+              src={quemSomosDois}
+              alt="quem-somos2"
+            />
+            <div className="font-bold mt-1">Nome 6</div>
+            <div className="mt-1">Descrição do q faz</div>
+          </div>
+
+          <div className="flex flex-col justify-center items-center text-gray-500 h-[12rem] w-[12rem]">
+            <Image
+              className="rounded-full h-[9rem] w-[9rem]"
+              src={quemSomosDois}
+              alt="quem-somos2"
+            />
+            <div className="font-bold mt-1">Nome 7</div>
+            <div className="mt-1">Descrição do q faz</div>
+          </div>
+
+          <div className="flex flex-col justify-center items-center text-gray-500 h-[12rem] w-[12rem]">
+            <Image
+              className="rounded-full h-[9rem] w-[9rem]"
+              src={quemSomosDois}
+              alt="quem-somos2"
+            />
+            <div className="font-bold mt-1">Nome 8</div>
+            <div className="mt-1">Descrição do q faz</div>
+          </div>
+
+          <div className="flex flex-col justify-center items-center text-gray-500 h-[12rem] w-[12rem]">
+            <Image
+              className="rounded-full h-[9rem] w-[9rem]"
+              src={quemSomosDois}
+              alt="quem-somos2"
+            />
+            <div className="font-bold mt-1">Nome 9</div>
+            <div className="mt-1">Descrição do q faz</div>
+          </div>
+
+          <div className="flex flex-col justify-center items-center text-gray-500 h-[12rem] w-[12rem]">
+            <Image
+              className="rounded-full h-[9rem] w-[9rem]"
+              src={quemSomosDois}
+              alt="quem-somos2"
+            />
+            <div className="font-bold mt-1">Nome 10</div>
+            <div className="mt-1">Descrição do q faz</div>
+          </div>
+
+          <div className="flex flex-col justify-center items-center text-gray-500 h-[12rem] w-[12rem]">
+            <Image
+              className="rounded-full h-[9rem] w-[9rem]"
+              src={quemSomosDois}
+              alt="quem-somos2"
+            />
+            <div className="font-bold mt-1">Nome 11</div>
+            <div className="mt-1">Descrição do q faz</div>
+          </div>
+
+          <div className="flex flex-col justify-center items-center text-gray-500 h-[12rem] w-[12rem]">
+            <Image
+              className="rounded-full h-[9rem] w-[9rem]"
+              src={quemSomosDois}
+              alt="quem-somos2"
+            />
+            <div className="font-bold mt-1">Nome 12</div>
+            <div className="mt-1">Descrição do q faz</div>
+          </div>
+        </div>
       </div>
     </>
   );

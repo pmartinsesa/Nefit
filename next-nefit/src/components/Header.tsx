@@ -69,15 +69,32 @@ export const Header = () => {
               </Link>
             </div>
             <div
-              data-isActive={pathName === "/producao-academica"}
+              data-isActive={pathName === "/livros-e-obras" || pathName === "/modulos-de-estudos"}
               className="data-[isActive=true]:text-red-active data-[isActive=true]:underline underline-offset-8 data-[isActive=true]:font-bold"
             >
-              <Link
-                className="hover:underline hover:underline-offset-8"
-                href=""
-              >
+              <div className="group">
                 Produção acadêmica
-              </Link>
+                <div className="absolute z-10 invisible group-hover:visible bg-gray-800 p-4 text-white font-normal">
+                  <ul>
+                    <li>
+                      <Link
+                        className="hover:underline hover:underline-offset-8"
+                        href="/livros-e-obras"
+                      >
+                        Livros e obras
+                      </Link>
+                    </li>
+                    <li className="mt-3">
+                      <Link
+                        className="hover:underline hover:underline-offset-8"
+                        href="/modulos-de-estudos"
+                      >
+                        Módulos de estudo
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div
               data-isActive={pathName === "/historico-de-atividades"}
