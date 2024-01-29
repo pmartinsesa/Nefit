@@ -3,9 +3,9 @@
   Pedro e Sá (Developer)
 
 ## Doc:
-  Open the [https://www.figma.com/file/udFg9OVkB3aekjwwzENsc8/Nefit-UFPR?type=design&node-id=1-3&mode=design&t=JWaHAfpQvqbn5ZMg-0](Nefit-Figma) with your browser to see the UI doc
+  Open the [Nefit-Figma](https://www.figma.com/file/udFg9OVkB3aekjwwzENsc8/Nefit-UFPR?type=design&node-id=1-3&mode=design&t=JWaHAfpQvqbn5ZMg-0) with your browser to see the UI doc
 
-  Created using [https://nextjs.org/](NextJS) and [https://firebase.google.com/](Firebase), to understand more about the site you can open the dev documentation of each tool
+  Created using [NextJS](https://nextjs.org/) and [Firebase](https://firebase.google.com/), to understand more about the site you can open the dev documentation of each tool
 
 ## Getting Started:
   First, run the development server:
@@ -20,10 +20,11 @@
   bun dev
   ```
 
-  Open [http://localhost:3000](http://localhost:3000) with your browser to se the result.
+  Open [Localhost](http://localhost:3000) with your browser to se the result.
 
 ## Contact Us:
   If you have more doubts about the project, please mail us:
 
   pmartinsesa@gmail.com
+
   daniel.caldas1902@gmail.com
