@@ -85,42 +85,39 @@ export default function worksAndBooks() {
     <>
       <Cover title="Livros e Obras" />
       <div className="grid grid-cols-12 mt-20 mb-32 min-[1950px]:justify-items-center">
-        <div className="col-start-2 col-span-2 text-gray-600">
-          <div className="flex items-center">
-            <PiBookBookmark className="h-6 w-7 fill-red-primary" />
-            <span className="font-bold text-lg">Classificar por:</span>
-          </div>
-          <ul className="my-6 cursor-pointer">
-            <li className="font-bold ml-[0.30rem] text-red-primary">
-              Mais Recentes
-            </li>
-          </ul>
-        </div>
-
-        {/* Books */}
-
-        <div
-          className="
-          col-start-4 col-span-8 
-          grid grid-cols-4 gap-y-4
-          "
-        >
-          {BOOKS.map((b, key) => {
-            return (
-              <div key={key} className="w-[15rem] h-[21.5rem]">
-                <Link href={b.link} target="_blank">
-                  <Image
-                    src={b.coverUrl}
-                    alt={key.toString()}
-                    width={100}
-                    height={100}
-                    style={{ width: "15rem", height: "20rem" }}
-                  />
-                  <span>{b.name}</span>
-                </Link>
+        <div className="col-start-2 col-span-10">
+          <div className="flex justify-between min-[1950px]:w-[77.5rem]">
+            <div className="mr-6">
+              <div className="flex items-center text-gray-600">
+                <PiBookBookmark className="h-6 w-7 fill-red-primary" />
+                <span className="font-bold text-lg w-36">Classificar por:</span>
               </div>
-            );
-          })}
+              <ul className="my-6 cursor-pointer">
+                <li className="font-bold ml-[0.30rem] text-red-primary">
+                  Mais Recentes
+                </li>
+              </ul>
+            </div>
+
+            <div className="flex flex-wrap gap-7">
+              {BOOKS.map((b, key) => {
+                return (
+                  <div key={key} className="w-[15rem] h-[21.5rem]">
+                    <Link href={b.link} target="_blank">
+                      <Image
+                        src={b.coverUrl}
+                        alt={key.toString()}
+                        width={100}
+                        height={100}
+                        style={{ width: "15rem", height: "20rem" }}
+                      />
+                      <span>{b.name}</span>
+                    </Link>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </>
