@@ -1,5 +1,6 @@
 ## Created By:
   Daniel Caldas (Designer)
+
   Pedro e Sá (Developer)
 
 ## Doc:
@@ -25,6 +26,6 @@
 ## Contact Us:
   If you have more doubts about the project, please mail us:
 
-  pmartinsesa@gmail.com
-
   daniel.caldas1902@gmail.com
+
+  pmartinsesa@gmail.com
