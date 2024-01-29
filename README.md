@@ -1,27 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Created By:
+  Daniel Caldas (Designer)
+  Pedro e Sá (Developer)
 
-## Getting Started
+## Doc:
+  Open the [https://www.figma.com/file/udFg9OVkB3aekjwwzENsc8/Nefit-UFPR?type=design&node-id=1-3&mode=design&t=JWaHAfpQvqbn5ZMg-0](Nefit-Figma) with your browser to see the UI doc
 
-First, run the development server:
+  Created using [https://nextjs.org/](NextJS) and [https://firebase.google.com/](Firebase), to understand more about the site you can open the dev documentation of each tool
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Getting Started:
+  First, run the development server:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to se the result.
+  ```bash
+  npm run dev
+  # or
+  yarn dev
+  # or
+  pnpm dev
+  # or
+  bun dev
+  ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  Open [http://localhost:3000](http://localhost:3000) with your browser to se the result.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Contact Us:
+  If you have more doubts about the project, please mail us:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  pmartinsesa@gmail.com
+  daniel.caldas1902@gmail.com
