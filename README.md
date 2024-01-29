@@ -26,6 +26,6 @@
 ## Contact Us:
   If you have more doubts about the project, please mail us:
 
-  daniel.caldas1902@gmail.com
+  danielcaldaz@outlook.com
 
   pmartinsesa@gmail.com
