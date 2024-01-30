@@ -6,13 +6,13 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Work } from "@/types/work";
 
-import { getAllWorksAndBooks } from "@/firebase/services/worksAndBooks";
+import { getAllWorksAndBooksAsync } from "@/firebase/services/worksAndBooks";
 
 export const BooksPainel = () => {
   const [books, setBooks] = useState<Array<Work>>([]);
 
   useEffect(() => {
-    getAllWorksAndBooks().then((b) => setBooks(b));
+    getAllWorksAndBooksAsync().then((b) => setBooks(b));
   }, []);
 
   return (
