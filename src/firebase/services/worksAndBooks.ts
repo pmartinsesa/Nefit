@@ -6,7 +6,10 @@ export const getAllWorksAndBooks = async (): Promise<Array<Work>> => {
   try {
     const worksUrl = ref(storage, process.env.NEXT_PUBLIC_WORKS_AND_BOOKS_PATH);
     const downloadUrl = await getDownloadURL(worksUrl);
-    return (await (await fetch(downloadUrl)).json()) as Work[];
+
+    return (await (
+      await fetch(downloadUrl, { next: { revalidate: 3600 } })
+    ).json()) as Work[];
   } catch (err) {
     return [];
   }
