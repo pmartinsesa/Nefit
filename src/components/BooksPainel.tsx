@@ -6,13 +6,15 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Work } from "@/types/work";
 
-import { getAllWorksAndBooksAsync } from "@/firebase/services/worksAndBooks";
+import { getAllDocumentsByPath } from "@/firebase/services/getAllDocumentsByPath";
 
 export const BooksPainel = () => {
   const [books, setBooks] = useState<Array<Work>>([]);
 
   useEffect(() => {
-    getAllWorksAndBooksAsync().then((b) => setBooks(b));
+    getAllDocumentsByPath<Work>(
+      process.env.NEXT_PUBLIC_WORKS_AND_BOOKS_PATH || ""
+    ).then((b) => setBooks(b));
   }, []);
 
   return (
