@@ -1,79 +1,10 @@
 import Image from "next/image";
 
 import { Cover } from "@/components/Cover";
+import { MembersPainel } from "@/components/MembersPainel";
 
 import quemSomosUm from "../../Assets/Images/quem-somos-1.png";
 import quemSomosDois from "../../Assets/Images/quem-somos-2.png";
-import { MemberCard } from "@/components/MemberCard";
-
-const NEFIT_MEMBERS = [
-  {
-    name: "nome1",
-    description: "oq faz",
-    image: quemSomosUm,
-  },
-  {
-    name: "nome1",
-    description: "oq faz",
-    image: quemSomosUm,
-  },
-  {
-    name: "nome1",
-    description: "oq faz",
-    image: quemSomosUm,
-  },
-  {
-    name: "nome1",
-    description: "oq faz",
-    image: quemSomosUm,
-  },
-  {
-    name: "nome1",
-    description: "oq faz",
-    image: quemSomosUm,
-  },
-  {
-    name: "nome1",
-    description: "oq faz",
-    image: quemSomosUm,
-  },
-  {
-    name: "nome1",
-    description: "oq faz",
-    image: quemSomosUm,
-  },
-  {
-    name: "nome1",
-    description: "oq faz",
-    image: quemSomosUm,
-  },
-  {
-    name: "nome1",
-    description: "oq faz",
-    image: quemSomosUm,
-  },
-  {
-    name: "nome1",
-    description: "oq faz",
-    image: quemSomosUm,
-  },
-  {
-    name: "nome1",
-    description: "oq faz",
-    image: quemSomosUm,
-  },
-  {
-    name: "nome1",
-    description: "oq faz",
-    image: quemSomosUm,
-  },
-];
-
-const renderMembers = (members: Array<any>) => {
-  return members.map((m) => (
-    <MemberCard key={m.name} name={m.name} description={m.description} image={m.image} />
-  ));
-};
 
 export default function aboutus() {
   return (
@@ -123,11 +54,12 @@ export default function aboutus() {
         </h1>
         <div
           className="
-          col-start-2 col-span-10 grid justify-items-center min-[1271px]:grid-cols-4 gap-x-40 gap-y-16 mb-48
-          min-[610px]:grid-cols-2 min-[1270px]:grid-cols-3
+          col-start-2 col-span-10 min-[1950px]:w-[75rem] mb-10
          "
         >
-          {renderMembers(NEFIT_MEMBERS)}
+          <div className="flex justify-center flex-wrap gap-y-20 gap-x-8">
+            <MembersPainel />
+          </div>
         </div>
       </div>
     </>
