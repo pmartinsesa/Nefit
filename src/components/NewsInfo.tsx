@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 
 import { Carrousel } from "./Carrousel";
 import { NewsCards } from "./NewsCards";
@@ -9,8 +8,8 @@ import { NewsCards } from "./NewsCards";
 import { News } from "@/types/news";
 import { getAllDocumentsByPath } from "@/firebase/services/getAllDocumentsByPath";
 
-
 export const NewsInfo = () => {
+  const [isLoading, setIsLoading] = useState<boolean>(true);
   const [news, setNews] = useState<Array<News>>([
     {
       carrouselImage: "",
@@ -23,9 +22,9 @@ export const NewsInfo = () => {
   ]);
 
   useEffect(() => {
-    getAllDocumentsByPath<News>(process.env.NEXT_PUBLIC_NEWS_PATH || "").then(
-      (n) => setNews(n)
-    );
+    getAllDocumentsByPath<News>(process.env.NEXT_PUBLIC_NEWS_PATH || "")
+      .then((n) => setNews(n))
+      .then(() => setIsLoading(false));
   }, []);
 
   const getFirstFourNews = (news: News[]) => {
@@ -37,7 +36,9 @@ export const NewsInfo = () => {
       .slice(0, 4);
   };
 
-  return (
+  return isLoading ? (
+    <></>
+  ) : (
     <>
       <Carrousel interval={3000} news={getFirstFourNews(news)} />
       <div className="grid grid-cols-12 mt-14">
@@ -48,15 +49,14 @@ export const NewsInfo = () => {
           <div className="flex justify-center gap-5 min-[1270px]:justify-between flex-wrap">
             {getFirstFourNews(news).map((n) => {
               return (
-                <Link key={n.title} href="/quem-somos">
-                  <NewsCards
-                    image={n.postImage}
-                    title={n.title}
-                    publishTime={n.postedAt}
-                    hashtags={n.hashtags}
-                    route=""
-                  />
-                </Link>
+                <NewsCards
+                  key={n.title}
+                  image={n.postImage}
+                  title={n.title}
+                  publishTime={n.postedAt}
+                  hashtags={n.hashtags}
+                  route=""
+                />
               );
             })}
           </div>

@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+
 import { useState } from "react";
 
 export type NewsProps = {
@@ -32,7 +34,7 @@ export const NewsCards = ({
         onMouseOut={() => setIsOver(false)}
         className="flex flex-col w-[17rem]"
       >
-        <a
+        <Link
           data-isover={isOver}
           className="data-[isover=true]:text-red-primary text-gray-800"
           href=""
@@ -51,7 +53,7 @@ export const NewsCards = ({
           <h2 className="transition duration-300 ease-in-out text-lg w-[17rem] max-h-[6rem] mt-4 font-bold overflow-hidden">
             {title}
           </h2>
-        </a>
+        </Link>
         <span className="w-[17rem] text-base mt-1">{`Publicado em ${new Date(
           publishTime
         ).getDay()} de ${getMonth(new Date(publishTime))} / ${new Date(

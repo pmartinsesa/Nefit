@@ -97,12 +97,12 @@ export const Header = () => {
               </div>
             </div>
             <div
-              data-isactive={pathName === "/historico-de-atividades"}
+              data-isactive={pathName === "/publicacoes"}
               className="data-[isactive=true]:text-red-active data-[isactive=true]:underline underline-offset-8 data-[isactive=true]:font-bold"
             >
               <Link
                 className="hover:underline hover:underline-offset-8"
-                href=""
+                href="/publicacoes"
               >
                 Publicações
               </Link>
