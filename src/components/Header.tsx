@@ -29,8 +29,8 @@ export const Header = () => {
   return (
     <>
       <div
-        data-isOnTop={scrollTop === 0}
-        className="grid grid-cols-12 fixed z-10 w-full data-[isOnTop=false]:bg-gray-100 text-white data-[isOnTop=false]:text-[#213030]"
+        data-isontop={scrollTop === 0}
+        className="grid grid-cols-12 fixed z-10 w-full data-[isontop=false]:bg-gray-100 text-white data-[isontop=false]:text-[#213030]"
       >
         <div
           className="
@@ -50,16 +50,16 @@ export const Header = () => {
               />
             </Link>
             <div
-              data-isActive={pathName === "/"}
-              className="data-[isActive=true]:text-red-active data-[isActive=true]:underline underline-offset-8 data-[isActive=true]:font-bold"
+              data-isactive={pathName === "/"}
+              className="data-[isactive=true]:text-red-active data-[isactive=true]:underline underline-offset-8 data-[isactive=true]:font-bold"
             >
               <Link className="hover:underline underline-offset-8" href="/">
                 Início
               </Link>
             </div>
             <div
-              data-isActive={pathName === "/quem-somos"}
-              className="data-[isActive=true]:text-red-active data-[isActive=true]:underline underline-offset-8 data-[isActive=true]:font-bold"
+              data-isactive={pathName === "/quem-somos"}
+              className="data-[isactive=true]:text-red-active data-[isactive=true]:underline underline-offset-8 data-[isactive=true]:font-bold"
             >
               <Link
                 className="hover:underline hover:underline-offset-8"
@@ -69,8 +69,8 @@ export const Header = () => {
               </Link>
             </div>
             <div
-              data-isActive={pathName === "/livros-e-obras" || pathName === "/modulos-de-estudos"}
-              className="data-[isActive=true]:text-red-active data-[isActive=true]:underline underline-offset-8 data-[isActive=true]:font-bold"
+              data-isactive={pathName === "/livros-e-obras" || pathName === "/modulos-de-estudos"}
+              className="data-[isactive=true]:text-red-active data-[isactive=true]:underline underline-offset-8 data-[isactive=true]:font-bold"
             >
               <div className="group">
                 Produção acadêmica
@@ -97,8 +97,8 @@ export const Header = () => {
               </div>
             </div>
             <div
-              data-isActive={pathName === "/historico-de-atividades"}
-              className="data-[isActive=true]:text-red-active data-[isActive=true]:underline underline-offset-8 data-[isActive=true]:font-bold"
+              data-isactive={pathName === "/historico-de-atividades"}
+              className="data-[isactive=true]:text-red-active data-[isactive=true]:underline underline-offset-8 data-[isactive=true]:font-bold"
             >
               <Link
                 className="hover:underline hover:underline-offset-8"

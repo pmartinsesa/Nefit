@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { useState } from "react";
 
@@ -7,12 +5,12 @@ export type NewsProps = {
   image: string;
   title: string;
   publishTime: string;
-  hashtags: string;
+  hashtags: string[];
   route: string;
   clasname?: string;
 };
 
-export const News = ({
+export const NewsCards = ({
   image,
   title,
   publishTime,
@@ -21,6 +19,11 @@ export const News = ({
   clasname,
 }: NewsProps) => {
   const [isOver, setIsOver] = useState(false);
+
+  const getMonth = (date: Date) => {
+    const monthName = date.toLocaleString("pt-BR", { month: "long" });
+    return monthName.charAt(0).toUpperCase() + monthName.slice(1);
+  };
 
   return (
     <>
@@ -42,13 +45,25 @@ export const News = ({
               data-[isover=true]:grayscale-0"
             src={image}
             alt="testemini1"
+            width={100}
+            height={100}
           />
           <h2 className="transition duration-300 ease-in-out text-lg w-[17rem] max-h-[6rem] mt-4 font-bold overflow-hidden">
             {title}
           </h2>
         </a>
-        <span className="w-[17rem] text-base mt-1">{`Publicado em ${publishTime}`}</span>
-        <span className="w-[17rem] text-base mt-1">{hashtags}</span>
+        <span className="w-[17rem] text-base mt-1">{`Publicado em ${new Date(
+          publishTime
+        ).getDay()} de ${getMonth(new Date(publishTime))} / ${new Date(
+          publishTime
+        ).getFullYear()}`}</span>
+        <span className="w-[17rem] text-base mt-1">
+          {hashtags.reduce(
+            (parsedHashtag, currentHashtag) =>
+              `${parsedHashtag} #${currentHashtag} `,
+            ""
+          )}
+        </span>
       </div>
     </>
   );

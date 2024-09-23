@@ -109,28 +109,28 @@ export const Schedulers = ({}: SchedulerType) => {
             <div className="">
               <h1
                 className="
-            text-[40px] font-bold 
-            max-[1270px]:text-3xl"
+                text-[40px] font-bold 
+                max-[1270px]:text-3xl"
               >
                 Agenda
               </h1>
               <h2
                 className="
-            text-[30px] font-extralight 
-            max-[1270px]:text-2xl"
+                text-[30px] font-extralight 
+                max-[1270px]:text-2xl"
               >
                 Participe de nossas próximas reuniões
               </h2>
             </div>
           </div>
           <button
-            data-isOpen={schedule !== null}
+            data-isopen={schedule !== null}
             className="
               h-12 w-[15rem] mt-12 px-4 py-1 text-white border-white rounded-xl
               transition duration-300 ease-in-out
               hover:bg-red-primary hover:text-white border
               max-[1270px]:h-10 max-[1270px]:w-[10rem]
-              invisible data-[isOpen=true]:visible"
+              invisible data-[isopen=true]:visible"
             type="submit"
             onClick={() => setSchedule(null)}
           >
