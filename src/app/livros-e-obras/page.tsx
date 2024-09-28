@@ -1,7 +1,7 @@
 import { Cover } from "@/components/Cover";
 
 import { PiBookBookmark } from "react-icons/pi";
-import { BooksPainel } from "@/components/BooksPainel";
+import { BooksPainel } from "@/components/livros-e-obras/BooksPainel";
 
 export default function worksAndBooks() {
   return (

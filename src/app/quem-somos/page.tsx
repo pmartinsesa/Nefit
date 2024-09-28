@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { Cover } from "@/components/Cover";
-import { MembersPainel } from "@/components/MembersPainel";
+import { MembersPainel } from "@/components/quem-somos/MembersPainel";
 
 import quemSomosUm from "../../Assets/Images/quem-somos-1.png";
 import quemSomosDois from "../../Assets/Images/quem-somos-2.png";

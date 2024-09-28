@@ -14,8 +14,8 @@ export const MemberCard = ({ image, name, description }: MemberCardProps) => {
           className="rounded-full h-[9rem] w-[9rem]"
           src={image}
           alt={name}
-          width={100}
-          height={100}
+          width={500}
+          height={500}
         />
         <div className="text-center w-[15rem]">
           <div className="font-bold mt-5">{name}</div>

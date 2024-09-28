@@ -32,10 +32,10 @@ export const Carrousel = ({ interval, news }: CarrouselProps) => {
     <>
       <div className="text-white">
         <Image
-          className="w-full h-[34.8rem] object-cover brightness-50 bg-no-repeat"
+          className="w-full h-[34.8rem] object-cover object-top brightness-50"
           src={news[activeIndex].carrouselImage}
-          width={100}
-          height={100}
+          width={500}
+          height={500}
           alt="not1"
         />
         <div className="absolute grid grid-cols-12 -mt-[16rem] min-[1950px]:justify-items-center w-full">
@@ -43,7 +43,7 @@ export const Carrousel = ({ interval, news }: CarrouselProps) => {
             <div className="text-3xl font-bold w-[27rem] h-auto">
               {news[activeIndex].title}
             </div>
-            <Link href="/">
+            <Link href={`publicacoes/${news[activeIndex].route}`}>
               <button
                 className="transition duration-300 ease-in-out hover:bg-black px-4 py-1 border rounded-xl h-[2.5rem] w-[8rem] mt-[0.88rem] "
                 type="submit"

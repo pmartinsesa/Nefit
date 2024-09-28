@@ -22,18 +22,18 @@ export const BooksPainel = () => {
       <div className="flex flex-wrap gap-7">
         {books.map((b, key) => {
           return (
-            <div key={key} className="w-[15rem] h-[21.5rem]">
+            <div key={key} className="w-[15rem] h-[21.5rem] text-gray-500 hover:text-red-active transition duration-300 ease-in-out">
               <Link href={b.link} target="_blank">
                 <Image
                   src={b.coverUrl}
                   alt={key.toString()}
-                  width={100}
-                  height={100}
+                  width={500}
+                  height={500}
                   style={{ width: "15rem", height: "20rem" }}
                 />
-                <span className="font-bold text-gray-500 text-lg">
+                <div className=" font-medium">
                   {b.name}
-                </span>
+                </div>
               </Link>
             </div>
           );

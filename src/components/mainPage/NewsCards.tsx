@@ -1,3 +1,4 @@
+import { getMonth } from "@/app/utils/date";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -22,11 +23,6 @@ export const NewsCards = ({
 }: NewsProps) => {
   const [isOver, setIsOver] = useState(false);
 
-  const getMonth = (date: Date) => {
-    const monthName = date.toLocaleString("pt-BR", { month: "long" });
-    return monthName.charAt(0).toUpperCase() + monthName.slice(1);
-  };
-
   return (
     <>
       <div
@@ -37,18 +33,18 @@ export const NewsCards = ({
         <Link
           data-isover={isOver}
           className="data-[isover=true]:text-red-primary text-gray-800"
-          href=""
+          href={`/publicacoes/${route}`}
         >
           <Image
             data-isover={isOver}
             className="
               transition duration-300 ease-in-out 
-              h-[17rem] w-[17rem] rounded-xl grayscale-[80%] object-cover 
+              h-[17rem] w-[17rem] rounded-xl grayscale-[80%]
               data-[isover=true]:grayscale-0"
             src={image}
             alt="testemini1"
-            width={100}
-            height={100}
+            width={300}
+            height={300}
           />
           <h2 className="transition duration-300 ease-in-out text-lg w-[17rem] max-h-[6rem] mt-4 font-bold overflow-hidden">
             {title}

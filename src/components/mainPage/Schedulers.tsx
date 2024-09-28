@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 import { BsCalendarCheck } from "react-icons/bs";
-import testeAgenda from "../Assets/images/testeAgenda.png";
+import testeAgenda from "../../Assets/images/testeAgenda.png";
 
 const schedules = [
   {

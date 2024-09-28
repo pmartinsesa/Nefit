@@ -30,7 +30,7 @@ export const Header = () => {
     <>
       <div
         data-isontop={scrollTop === 0}
-        className="grid grid-cols-12 fixed z-10 w-full data-[isontop=false]:bg-gray-100 text-white data-[isontop=false]:text-[#213030]"
+        className="grid grid-cols-12 fixed z-20 w-full data-[isontop=false]:bg-gray-100 text-white data-[isontop=false]:text-[#213030]"
       >
         <div
           className="
@@ -108,11 +108,11 @@ export const Header = () => {
               </Link>
             </div>
 
-            <div>
+            {/* <div>
               <button>
                 <Search color={scrollTop ? "#213030" : "white"} />
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
