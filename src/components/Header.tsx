@@ -8,7 +8,6 @@ import { useEffect, useState } from "react";
 
 import nefitLogo from "../Assets/images/logo-nefit-branco.png";
 import nefitLogoCinza from "../Assets/images/logo-nefit-cinza.png";
-import { Search } from "@/Assets/Icons/Search";
 
 export const Header = () => {
   const [scrollTop, setScrollTop] = useState(0);

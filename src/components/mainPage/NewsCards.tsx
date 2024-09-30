@@ -42,7 +42,7 @@ export const NewsCards = ({
               h-[17rem] w-[17rem] rounded-xl grayscale-[80%]
               data-[isover=true]:grayscale-0"
             src={image}
-            alt="testemini1"
+            alt={`noticia-${title}`}
             width={300}
             height={300}
           />

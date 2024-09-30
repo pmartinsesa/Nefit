@@ -1,5 +1,5 @@
 import Image from "next/image";
-import testeNoticiaUm from "../Assets/images/testeNoticiaUm.png";
+import cover from "../Assets/images/cover.png";
 
 export type CoverProps = {
   title?: string;
@@ -11,7 +11,7 @@ export const Cover = ({ title = "" }: CoverProps) => {
       <div className="text-white">
         <Image
           className="w-full h-[23.5rem] object-cover brightness-50 bg-no-repeat"
-          src={testeNoticiaUm}
+          src={cover}
           alt="not1"
         />
         <div className="absolute -mt-[6rem] grid grid-cols-12 min-[1950px]:justify-items-center w-full">

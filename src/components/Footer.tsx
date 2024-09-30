@@ -27,22 +27,19 @@ export const Footer = () => {
             />
           </div>
           <span className="mt-6 w-[18rem] text-gray-800">
-            Todos os direitos reservados © 2023
+            {`Todos os direitos reservados © ${new Date().getFullYear()}`}
           </span>
         </div>
       </div>
       <div className="bg-[#69130E] flex justify-center items-center h-16 text-white gap-2">
-        <a href="">
+        <a href="https://www.instagram.com/nefitufpr/" target="_blank">
           <AiOutlineInstagram className="h-6 w-6" />
         </a>
-        <a href="">
+        <a href="https://www.youtube.com/channel/UCSl3ofOZQSYHe9RqUDk0W5Q" target="_blank">
           <AiFillYoutube className="h-6 w-6" />
         </a>
-        <a href="">
+        <a href="https://web.facebook.com/nefitufpr/?_rdc=1&_rdr" target="_blank">
           <FaFacebookF className="h-6 w-6" />
-        </a>
-        <a href="">
-          <AiOutlineTwitter className="h-6 w-6" />
         </a>
       </div>
     </>

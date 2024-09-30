@@ -28,9 +28,9 @@ export const AsideNewsCard = ({title, route, imageSrc, order}: AsideNewsCardProp
               h-[7rem] w-[7rem] rounded-xl grayscale-[90%]
               data-[isover=true]:grayscale-0"
         src={imageSrc}
-        alt="testemini1"
-        width={300}
-        height={300}
+        alt={`noticia-${title}`}
+        width={500}
+        height={500}
       />
       <div className="transition duration-300 ease-in-out text-sm w-[13rem] max-h-[6rem] overflow-hidden self-start">
         Postagem {order}: {title}

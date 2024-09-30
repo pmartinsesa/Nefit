@@ -24,9 +24,9 @@ export const PublishCard = ({
           <Image
             className="h-[15rem] w-[15rem] rounded-xl object-cover"
             src={image}
-            alt="testemini1"
-            width={200}
-            height={200}
+            alt={`image-${title}`}
+            width={500}
+            height={500}
           />
           <div className="flex flex-col">
             <h2 className="text-lg w-[17rem] max-h-[6rem] mt-4 font-bold overflow-hidden">

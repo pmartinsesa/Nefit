@@ -1,22 +1,13 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 
-import { useEffect, useState } from "react";
 import { Work } from "@/types/work";
 
-import { getAllDocumentsByPath } from "@/firebase/services/getAllDocumentsByPath";
+export type booksProps = {
+  books: Work[];
+}
 
-export const BooksPainel = () => {
-  const [books, setBooks] = useState<Array<Work>>([]);
-
-  useEffect(() => {
-    getAllDocumentsByPath<Work>(
-      process.env.NEXT_PUBLIC_WORKS_AND_BOOKS_PATH || ""
-    ).then((b) => setBooks(b));
-  }, []);
-
+export const BooksPainel = ({books}:booksProps) => {
   return (
     <>
       <div className="flex flex-wrap gap-7">

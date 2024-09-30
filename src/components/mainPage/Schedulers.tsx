@@ -1,52 +1,27 @@
-"use client";
-
 import Image from "next/image";
 import { useState } from "react";
 
 import { BsCalendarCheck } from "react-icons/bs";
-import testeAgenda from "../../Assets/images/testeAgenda.png";
+import { Scheduler } from "@/types/scheduler";
 
-const schedules = [
-  {
-    image: testeAgenda,
-    description:
-      'teste1 Dando continuidade às nossas discussões sobre Positivismo, hoje teremos um dos encontros mais importantes\n\nFalaremos sobre o positivismo jurídico de Scott Shapiro. Para a discussão, analisaremos um capítulo da obra "legalidade" do autor, onde busca desenvolver, preliminarmente, a sua teoria positivista.',
-    date: "01/02/2022",
-    localization:
-      "Nos reunimos às 18h30, na sala 310, 2° andar da faculdade de direito da UFPR.",
-  },
-  {
-    image: testeAgenda,
-    description:
-      'teste2 Dando continuidade às nossas discussões sobre Positivismo, hoje teremos um dos encontros mais importantes\n\nFalaremos sobre o positivismo jurídico de Scott Shapiro. Para a discussão, analisaremos um capítulo da obra "legalidade" do autor, onde busca desenvolver, preliminarmente, a sua teoria positivista.',
-    date: "01/02/2022",
-    localization:
-      "Nos reunimos às 18h30, na sala 310, 2° andar da faculdade de direito da UFPR.",
-  },
-  {
-    image: testeAgenda,
-    description:
-      'teste3 Dando continuidade às nossas discussões sobre Positivismo, hoje teremos um dos encontros mais importantes\n\nFalaremos sobre o positivismo jurídico de Scott Shapiro. Para a discussão, analisaremos um capítulo da obra "legalidade" do autor, onde busca desenvolver, preliminarmente, a sua teoria positivista.',
-    date: "01/02/2022",
-    localization:
-      "Nos reunimos às 18h30, na sala 310, 2° andar da faculdade de direito da UFPR.",
-  },
-];
+export type SchedulerProps = {
+  schedulers: Scheduler[];
+};
 
-export type SchedulerType = {};
-
-export const Schedulers = ({}: SchedulerType) => {
-  const [schedule, setSchedule] = useState<any>(null);
+export const Schedulers = ({ schedulers }: SchedulerProps) => {
+  const [schedule, setSchedule] = useState<Scheduler | null>(null);
 
   const allSchedules = (): JSX.Element[] => {
-    return schedules.map((s, i) => (
+    return schedulers.map((s, i) => (
       <Image
         key={i}
         className="h-[22rem] w-[22rem] rounded-xl object-cover cursor-pointer"
         src={s.image}
-        alt={`testemini-${i}`}
+        width={500}
+        height={500}
+        alt={`agenda-${i}`}
         onClick={(e: any) =>
-          setSchedule(schedules[parseInt(e?.target?.alt.split("-")[1])])
+          setSchedule(schedulers[parseInt(e?.target?.alt.split("-")[1])])
         }
       />
     ));
@@ -62,7 +37,7 @@ export const Schedulers = ({}: SchedulerType) => {
         >
           <div
             className="
-            flex justify-between gap-8
+            flex justify-between gap-8 flex-wrap
             max-[1270px]:flex-col max-[1270px]:items-center"
           >
             {allSchedules()}
@@ -85,14 +60,16 @@ export const Schedulers = ({}: SchedulerType) => {
                 rounded-xl object-cover cursor-pointer h-[22rem] w-[22rem] 
                 max-[850px]:h-[15rem] max-[850px]:w-[15rem] max-[550px]:h-[5rem] max-[550px]:w-[5rem]"
               src={schedule.image}
-              alt="testemini1"
+              width={500}
+              height={500}
+              alt="agenda-selecionada"
             />
             <div
               className="
               pt-4 font-light justify-self-center whitespace-pre-line w-[30rem] h-[18rem]
               max-[850px]:text-sm max-[680px]:text-xs"
             >
-              {`${schedule.description}\n\nData: ${schedule.date}\n${schedule.localization}\n\nEsperamos todos a sua presença`}
+              {`${schedule.description}`}
             </div>
           </div>
         </div>

@@ -11,17 +11,19 @@ export default function aboutus() {
     <>
       <Cover title="Quem Somos" />
       <div className="grid grid-cols-12 mt-20 min-[1950px]:justify-items-center">
-        <div className="col-start-2 col-span-10 flex gap-12 justify-between max-[1270px]:flex-col max-[1270px]:items-center">
+        <div className="col-start-2 col-span-10 flex gap-10 justify-between max-[1270px]:flex-col max-[1270px]:items-center">
           <Image
-            className="h-[27rem] w-[34.125rem]"
-            src={quemSomosUm}
+            className="h-[27rem] w-[40rem] rounded-xl"
+            src="https://firebasestorage.googleapis.com/v0/b/nefit-dev.appspot.com/o/Nefit%2Fsobre-nos%2Fimagens%2Fgeral.jpeg?alt=media&token=343c2a3e-f9fc-4848-843e-789aa6c67022"
+            width={500}
+            height={500}
             alt="quem-somos1"
           />
-          <div className="flex flex-col w-[34rem]">
+          <div className="flex flex-col w-[45rem]">
             <h1 className=" text-red-primary text-4xl font-bold max-[1270px]:mt-10">
               Somos o NEFIT
             </h1>
-            <p className="mt-6 text-xl text-gray-800">
+            <p className="mt-6 text-gray-700 tracking-wider leading-relaxed">
               O NEFIT – Núcleo de Estudos em Filosofia e Teoria do Direito é um
               grupo de pesquisa que busca colocar em movimento a Teoria e a
               Filosofia do Direito no Brasil. O grupo surgiu em julho de 2020,
@@ -32,8 +34,8 @@ export default function aboutus() {
             </p>
           </div>
         </div>
-        <div className="col-start-2 col-span-10 mt-44 gap-12 flex justify-between max-[1270px]:flex-col max-[1270px]:items-center">
-          <p className="text-xl text-gray-800 w-[34rem]">
+        <div className="col-start-2 col-span-10 mt-44 flex justify-between gap-10 max-[1270px]:flex-col max-[1270px]:items-center">
+          <p className="text-gray-700 tracking-wider leading-relaxed w-[45rem]">
             O núcleo centralizou suas atuações até aqui na organização de
             eventos e publicações coletivas, sem deixar de mirar em atividades
             de extensão e divulgação científica do conhecimento jurídico da
@@ -43,8 +45,10 @@ export default function aboutus() {
             jurídica e teoria geral do Direito e democracia.
           </p>
           <Image
-            className="h-[27rem] w-[34.125rem]"
-            src={quemSomosDois}
+            className="h-[27rem] w-[40rem] rounded-xl"
+            src="https://firebasestorage.googleapis.com/v0/b/nefit-dev.appspot.com/o/Nefit%2Fsobre-nos%2Fimagens%2Fgeral2.jpg?alt=media&token=bf5e43c8-bdd5-4249-9073-1e0e8fe93953"
+            width={500}
+            height={500}
             alt="quem-somos2"
           />
         </div>
