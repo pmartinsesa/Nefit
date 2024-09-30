@@ -1,3 +1,5 @@
+import React from "react";
+
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { News } from "@/types/news";

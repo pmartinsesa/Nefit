@@ -1,3 +1,5 @@
+import React from "react";
+
 import { News } from "@/types/news";
 import { AsideNewsCard } from "./AsideNewsCard";
 import { getFirstFourNews } from "@/app/utils/newsUtils";

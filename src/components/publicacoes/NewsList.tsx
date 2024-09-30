@@ -1,3 +1,4 @@
+import React from "react";
 import { News } from "@/types/news";
 import { PublishCard } from "./PublishCard";
 

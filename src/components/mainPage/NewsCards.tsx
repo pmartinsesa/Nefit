@@ -1,3 +1,5 @@
+import React from "react";
+
 import { getMonth } from "@/app/utils/date";
 import Image from "next/image";
 import Link from "next/link";
