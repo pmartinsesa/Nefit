@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 
 import { Cover } from "@/components/Cover";
 
@@ -9,7 +10,7 @@ import { useEffect, useState } from "react";
 import { getAllDocumentsByPath } from "@/firebase/services/getAllDocumentsByPath";
 import { Work } from "@/types/work";
 
-export default function worksAndBooks() {
+export default function WorksAndBooks() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [books, setBooks] = useState<Array<Work>>([]);
 
