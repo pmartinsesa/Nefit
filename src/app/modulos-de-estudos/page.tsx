@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { Cover } from "@/components/Cover";
 import { Loading } from "@/components/Loading";
 import { getAllDocumentsByPath } from "@/firebase/services/getAllDocumentsByPath";
@@ -8,7 +9,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { PiBookBookmarkLight } from "react-icons/pi";
 
-export default function studyModules() {
+export default function StudyModules() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [selectedYear, setSelectedYear] = useState<string>("2020");
   const [studyModules, setStudyModules] = useState<object>({});
@@ -20,9 +21,6 @@ export default function studyModules() {
       .then((sm) => setStudyModules(sm))
       .then(() => setIsLoading(false));
   }, []);
-
-  console.log(studyModules);
-  console.log(Object.keys(studyModules));
 
   return isLoading ? (
     <ChakraProvider>

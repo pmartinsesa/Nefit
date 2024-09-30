@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 
 import { Schedulers } from "@/components/mainPage/Schedulers";
 import { NewsInfo } from "@/components/mainPage/NewsInfo";

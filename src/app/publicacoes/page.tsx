@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { useEffect, useState } from "react";
 
 import { ChakraProvider } from "@chakra-ui/react";
@@ -10,7 +11,7 @@ import { Loading } from "@/components/Loading";
 import { NewsList } from "@/components/publicacoes/NewsList";
 import { getAllDocumentsByPath } from "@/firebase/services/getAllDocumentsByPath";
 
-export default function publishings() {
+export default function Publishings() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [news, setNews] = useState<Array<News>>([
     {
