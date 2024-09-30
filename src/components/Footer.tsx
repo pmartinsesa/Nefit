@@ -1,8 +1,8 @@
+import React from "react";
 import { FaFacebookF } from "react-icons/fa";
 import {
   AiFillYoutube,
   AiOutlineInstagram,
-  AiOutlineTwitter,
 } from "react-icons/ai";
 
 import logoUfpr from "../Assets/images/logo-ufpr.png";
