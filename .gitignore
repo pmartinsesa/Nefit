@@ -11,6 +11,7 @@
 # next.js
 /.next/
 /out/
+.firebase/
 
 # production
 /build
@@ -33,3 +34,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.vercel
+.env*.local
+.env*.development
+.env.zip

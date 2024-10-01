@@ -1,11 +1,11 @@
 {
   "name": "next-nefit",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next build && next export",
+    "export": "next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -16,11 +16,13 @@
     "@emotion/styled": "^11.13.0",
     "firebase": "^10.7.2",
     "framer-motion": "^11.5.6",
+    "http": "^0.0.1-security",
     "next": "^14.2.13",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0",
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "url": "^0.11.4"
   },
   "devDependencies": {
     "@types/node": "^20",
