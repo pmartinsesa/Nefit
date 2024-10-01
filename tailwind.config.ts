@@ -12,7 +12,7 @@ const config: Config = {
         557: '55rem'
       },
       backgroundImage: {
-        'nefit-logo': "url('/src/Assets/images/nefit-logo.png')",
+        'nefit-logo': "url('/src/Assets/Images/nefit-logo.png')",
       },
       colors: {
         red: {

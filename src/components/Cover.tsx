@@ -1,7 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
-import cover from "../Assets/images/cover.png";
+import cover from "../Assets/Images/cover.png";
 
 export type CoverProps = {
   title?: string;

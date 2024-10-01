@@ -1,6 +1,6 @@
 import React from "react";
 import { Spinner } from "@chakra-ui/react";
-import logo from "../Assets/images/logo-nefit-footer.png";
+import logo from "../Assets/Images/logo-nefit-footer.png";
 import Image from "next/image";
 
 export const Loading = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 
 import Link from "next/link";
-import logo from "../Assets/images/logo-nefit-footer.png";
+import logo from "../Assets/Images/logo-nefit-footer.png";
 import Image from "next/image";
 
 export default function NotFoundPage() {

@@ -5,8 +5,8 @@ import {
   AiOutlineInstagram,
 } from "react-icons/ai";
 
-import logoUfpr from "../Assets/images/logo-ufpr.png";
-import logo from "../Assets/images/logo-nefit-footer.png";
+import logoUfpr from "../Assets/Images/logo-ufpr.png";
+import logo from "../Assets/Images/logo-nefit-footer.png";
 import Image from "next/image";
 
 export const Footer = () => {
