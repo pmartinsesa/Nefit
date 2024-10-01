@@ -68,6 +68,7 @@ export default function NewsDetails({ params }: NewsDetailsProps) {
         <>
           <p
             key={p}
+            className="w-full overflow-hidden"
             dangerouslySetInnerHTML={{ __html: linkifiedParagraph }}
           ></p>
           <br />
@@ -86,8 +87,8 @@ export default function NewsDetails({ params }: NewsDetailsProps) {
         <Cover />
         <div className=" flex justify-center">
           <div className="grid grid-cols-12 my-14 min-[1950px]:w-[1950px]">
-            <div className="col-start-2 col-span-6 mt-8 min-[1950px]:justify-self-center">
-              <div className=" text-red-primary text-4xl font-bold max-[1270px]:mt-10 ">
+            <div className="col-start-2 min-[1950px]:col-span-6 col-span-10 mt-8 min-[1950px]:justify-self-center">
+              <div className=" text-red-primary text-4xl font-bold max-[1270px]:mt-10">
                 {news.title}
               </div>
               <div className="text-gray-500 mt-4 text-lg font-light">

@@ -18,7 +18,7 @@ export default function Aboutus() {
             height={500}
             alt="quem-somos1"
           />
-          <div className="flex flex-col w-[45rem]">
+          <div className="flex flex-col min-[1950px]:w-[45rem] w-full">
             <h1 className=" text-red-primary text-4xl font-bold max-[1270px]:mt-10">
               Somos o NEFIT
             </h1>
@@ -34,7 +34,7 @@ export default function Aboutus() {
           </div>
         </div>
         <div className="col-start-2 col-span-10 mt-44 flex justify-between gap-10 max-[1270px]:flex-col max-[1270px]:items-center">
-          <p className="text-gray-700 tracking-wider leading-relaxed w-[45rem]">
+          <p className="text-gray-700 tracking-wider leading-relaxed min-[1950px]:w-[45rem] w-full">
             O núcleo centralizou suas atuações até aqui na organização de
             eventos e publicações coletivas, sem deixar de mirar em atividades
             de extensão e divulgação científica do conhecimento jurídico da
@@ -51,7 +51,7 @@ export default function Aboutus() {
             alt="quem-somos2"
           />
         </div>
-        <div className="justify-self-center col-span-12 border-t-2 border-gray-300 mt-20 mb-16 w-[42rem]"></div>
+        <div className="justify-self-center col-span-12 border-t-2 border-gray-300 mt-20 mb-16 min-[1950px]:w-[42rem] w-full"></div>
         <h1 className="justify-self-center col-span-12 text-red-primary mb-14 text-4xl font-bold">
           Membros
         </h1>

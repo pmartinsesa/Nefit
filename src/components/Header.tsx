@@ -30,7 +30,7 @@ export const Header = () => {
     <>
       <div
         data-isontop={scrollTop === 0}
-        className="grid grid-cols-12 fixed z-20 w-full data-[isontop=false]:bg-gray-100 text-white data-[isontop=false]:text-[#213030]"
+        className="grid grid-cols-12 fixed z-20 w-full data-[isontop=false]:bg-gray-100 text-white data-[isontop=false]:text-[rgb(33,48,48)]"
       >
         <div
           className="
@@ -39,8 +39,8 @@ export const Header = () => {
         >
           <div
             className="
-            flex justify-between items-center 
-            min-[1950px]:gap-28"
+            flex justify-between items-center flex-wrap 
+            min-[1950px]:gap-28 gap-1"
           >
             <Link href="/">
               <Image

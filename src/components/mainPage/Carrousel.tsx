@@ -42,7 +42,7 @@ export const Carrousel = ({ interval, news }: CarrouselProps) => {
         />
         <div className="absolute grid grid-cols-12 -mt-[16rem] min-[1950px]:justify-items-center w-full">
           <div className="col-start-2 col-span-10 min-[1950px]:w-[75rem]">
-            <div className="text-3xl font-bold w-[27rem] h-auto">
+            <div className="text-3xl font-bold min-[1950px]:w-[27rem] w-full h-auto">
               {news[activeIndex].title}
             </div>
             <Link href={`publicacoes/${news[activeIndex].route}`}>
