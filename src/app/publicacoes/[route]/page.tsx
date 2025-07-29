@@ -25,6 +25,7 @@ export default function NewsDetails({ params }: NewsDetailsProps) {
     hashtags: [],
     postedAt: "",
     postImage: "",
+    author: "",
   });
   const [newsList, setNewsList] = useState<Array<News>>([
     {
@@ -35,6 +36,7 @@ export default function NewsDetails({ params }: NewsDetailsProps) {
       hashtags: [],
       postedAt: "",
       postImage: "",
+      author: "",
     },
   ]);
   useEffect(() => {
@@ -98,6 +100,9 @@ export default function NewsDetails({ params }: NewsDetailsProps) {
                   .padStart(2, "0")} de ${getMonth(
                   new Date(news.postedAt)
                 )} de ${new Date(news.postedAt).getFullYear()}`}
+                </div>
+                <div className="text-gray-500 mt-1 text-lg font-bold">
+                  {`Escrito por: ${news.author || "Nefit"}`}
               </div>
             </div>
 

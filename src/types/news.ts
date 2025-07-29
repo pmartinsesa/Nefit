@@ -6,4 +6,5 @@ export type News = {
   postedAt: string;
   content: string;
   hashtags: Array<string>;
+  author: string;
 }
