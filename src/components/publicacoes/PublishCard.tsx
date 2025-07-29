@@ -35,7 +35,7 @@ export const PublishCard = ({
               {title}
             </h2>
             <div className="text-base mt-2 text-gray-700">
-              {`Publicado em ${new Date(publishTime).getDay()} de ${getMonth(
+              {`Publicado em ${new Date(publishTime).getDate()} de ${getMonth(
                 new Date(publishTime)
               )} / ${new Date(publishTime).getFullYear()}`}
             </div>
