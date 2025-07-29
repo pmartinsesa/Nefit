@@ -21,6 +21,7 @@ export default function Begin() {
       hashtags: [],
       postedAt: "",
       postImage: "",
+      author: "",
     },
   ]);
   const [schedulers, setSchedulers] = useState<Array<Scheduler>>([{
