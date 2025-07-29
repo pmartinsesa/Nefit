@@ -95,7 +95,7 @@ export default function NewsDetails({ params }: NewsDetailsProps) {
               </div>
               <div className="text-gray-500 mt-4 text-lg font-light">
                 {`Postado em ${new Date(news.postedAt)
-                  .getDay()
+                  .getDate()
                   .toString()
                   .padStart(2, "0")} de ${getMonth(
                   new Date(news.postedAt)

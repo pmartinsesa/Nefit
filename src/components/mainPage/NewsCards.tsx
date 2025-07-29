@@ -54,7 +54,7 @@ export const NewsCards = ({
         </Link>
         <span className="w-[17rem] text-base mt-1">{`Publicado em ${new Date(
           publishTime
-        ).getDay()} de ${getMonth(new Date(publishTime))} / ${new Date(
+        ).getDate()} de ${getMonth(new Date(publishTime))} / ${new Date(
           publishTime
         ).getFullYear()}`}</span>
         <span className="w-[17rem] text-base mt-1">
