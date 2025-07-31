@@ -28,7 +28,7 @@ export default function Publishings() {
 
   useEffect(() => {
     getAllDocumentsByPath<News>(process.env.NEXT_PUBLIC_NEWS_PATH || "")
-      .then((n) => setNews(n))
+      .then((n) => setNews(n.filter((news) => news.type !== "cryptic")))
       .then(() => setIsLoading(false));
   }, []);
 
@@ -38,7 +38,7 @@ export default function Publishings() {
     </ChakraProvider>
   ) : (
     <>
-      <Cover title="Publicações" />
+      <Cover title="Opinião NEFIT" />
       <NewsList news={news}/>
     </>
   );

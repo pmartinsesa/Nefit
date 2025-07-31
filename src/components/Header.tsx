@@ -97,22 +97,33 @@ export const Header = () => {
               </div>
             </div>
             <div
-              data-isactive={pathName === "/publicacoes"}
+              data-isactive={pathName === "/publicacoes" || pathName === "/cripticos"}
               className="data-[isactive=true]:text-red-active data-[isactive=true]:underline underline-offset-8 data-[isactive=true]:font-bold"
             >
-              <Link
-                className="hover:underline hover:underline-offset-8"
-                href="/publicacoes"
-              >
+              <div className="group">
                 Publicações
-              </Link>
+                <div className="absolute z-10 invisible group-hover:visible bg-gray-800 p-4 text-white font-normal">
+                  <ul>
+                    <li>
+                      <Link
+                        className="hover:underline hover:underline-offset-8"
+                        href="/publicacoes"
+                      >
+                        Opinião NEFIT
+                      </Link>
+                    </li>
+                    <li className="mt-3">
+                      <Link
+                        className="hover:underline hover:underline-offset-8"
+                        href="/cripticos"
+                      >
+                        Crípticos
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-
-            {/* <div>
-              <button>
-                <Search color={scrollTop ? "#213030" : "white"} />
-              </button>
-            </div> */}
           </div>
         </div>
       </div>

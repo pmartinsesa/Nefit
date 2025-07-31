@@ -7,4 +7,5 @@ export type News = {
   content: string;
   hashtags: Array<string>;
   author: string;
+  type?: "opinion" | "cryptic";
 }

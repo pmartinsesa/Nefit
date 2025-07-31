@@ -27,18 +27,17 @@ export default function NewsDetails({ params }: NewsDetailsProps) {
     postImage: "",
     author: "",
   });
-  const [newsList, setNewsList] = useState<Array<News>>([
-    {
-      carrouselImage: "",
-      title: "",
-      route: "",
-      content: "",
-      hashtags: [],
-      postedAt: "",
-      postImage: "",
-      author: "",
-    },
-  ]);
+  const [newsList, setNewsList] = useState<Array<News>>([{
+    carrouselImage: "",
+    title: "",
+    route: "",
+    content: "",
+    hashtags: [],
+    postedAt: "",
+    postImage: "",
+    author: "",
+  },
+]);
   useEffect(() => {
     getAllDocumentsByPath<News>(process.env.NEXT_PUBLIC_NEWS_PATH || "")
       .then((newsList) => {
@@ -70,10 +69,9 @@ export default function NewsDetails({ params }: NewsDetailsProps) {
         <>
           <p
             key={p}
-            className="w-full overflow-hidden"
+            className="w-full overflow-hidden mb-3"
             dangerouslySetInnerHTML={{ __html: linkifiedParagraph }}
           ></p>
-          <br />
         </>
       );
     });
